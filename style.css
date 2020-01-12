@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --transition: all 0.3s ease-in-out;
+  --background-color: #ffffff;
+  --text-color: #444452;
+  --a: #7d0ce8;
+}
+
+/* global styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0 5%;
+  font-weight: 400;
+}
+
+i {
+  color: var(--text-color);
+  letter-spacing: 20px;
+}
+
+i:hover {
+  color: var(--a);
+  transition: var(--transition);
+}
+
+.arrow {
+  color: var(--a);
+  margin: 0 10px;
+}
+
+/* end of global styles */
+/* into styles */
+
+.intro {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.intro__hello {
+  font-size: 2.5em;
+  padding: 10px 0;
+  margin: 0;
+  font-weight: 400;
+}
+.highlight-link {
+  text-decoration-line: underline;
+  text-decoration-color: var(--a);
+  color: var(--text-color);
+  padding: 0.5% 0.3%;
+}
+.highlight-link:hover {
+  transition: var(--transition);
+  color: var(--a);
+}
+.intro__tagline,
+.intro__contact {
+  font-size: 1.5em;
+  width: 70%;
+  font-weight: 100;
+  margin: 0em;
+  padding: 0;
+}
+
+/* end of into styles */
+/* footer styles */
+
+.footer__social {
+  display: inline-flex;
+}
+.footer {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+/* end footer styles */
+
+/* breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .intro {
+    height: auto;
+    margin-top: 100px;
+  }
+  .intro__hello {
+    font-size: 3em;
+    padding: 20px 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro__tagline,
+  .intro__contact {
+    font-size: 1.5em;
+    width: 100;
+    font-weight: 100;
+    margin: 0em;
+    padding: 20px 0;
+  }
+
+  .intro__contact {
+    font-size: 1em;
+    padding: 20px 0;
+  }
+
+  /* footer styles */
+
+  .footer {
+    font-size: 1em;
+  }
+  /* end footer styles */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .intro {
+    margin-top: 10px;
+    height: auto;
+  }
+  .intro__hello {
+    font-size: 3em;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .intro__tagline,
+  .intro__contact {
+    font-size: 2em;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .intro__contact {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  /* footer styles */
+  .footer {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  /* end footer styles */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .intro__hello {
+    font-size: 4em;
+  }
+  .intro__tagline,
+  .intro__contact {
+    font-size: 2em;
+    width: 100%;
+  }
+
+  .intro__contact {
+    font-size: 1em;
+  }
+
+  /* footer styles */
+  .footer {
+    font-size: 1em;
+  }
+  /* end footer styles */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .intro__hello {
+    font-size: 5em;
+  }
+  .intro__tagline {
+    font-size: 2.5em;
+    width: 70%;
+  }
+  .intro__contact {
+    font-size: 1.5em;
+  }
+  /* footer styles */
+  .footer {
+    font-size: 1.5em;
+  }
+  /* end footer styles */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
