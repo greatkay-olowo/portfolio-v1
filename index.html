@@ -7,11 +7,20 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
     <meta
       name="keywords"
       content="design, development, web, greatkay-olowo, kayode, alao, javascript, html, css, react.js, node.js, express, mongodb"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/7b9638af0a.js"
       crossorigin="anonymous"
@@ -19,34 +28,158 @@
     <title>Kayode Alao</title>
   </head>
   <body>
-    <header class="intro">
-      <h1 class="intro__hello">
-        Hi!
-      </h1>
-      <h2 class="intro__tagline">
-        I'm <strong>Kayode Alao</strong>, a FullStack (JavaScript) Software
-        Engineer focused on building meaningful products &amp; bringing your
-        wishes to life.
-      </h2>
-      <h3 class="intro__contact">
-        <span>Get in touch <span class="arrow">&#8594;</span> </span>
-        <span>
-          <a
-            href="mailto:oluwakayode.alao@gmail.com"
-            target="_blank"
-            class="highlight-link"
-            >oluwakayode.alao@gmail.com</a
-          >
-        </span>
-      </h3>
-    </header>
-    <footer class="footer">
-      Designed & Developed by Kayode Alao <span class="arrow">&#8594;</span>
-      <div class="footer__social">
-        <a href="#" target="_blank"><i class="far fa-envelope"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <header>
+      <div class="logo">
+        &#60; Kayode &#92;&#62;
       </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Kayode Alao</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Full stack Software Engineer
+      </p>
+      <img
+        src="img/img-1.jpeg"
+        alt="A picture of Kayode smilling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- my Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Design and Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quam corporis inventore, obcaecati illo dicta hic vero nemo
+            dignissimos expedita, voluptate architecto possimus enim. Suscipit
+            harum aliquam dignissimos quia sapiente.
+          </p>
+        </div>
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quam corporis inventore, obcaecati illo dicta hic vero nemo
+            dignissimos expedita, voluptate architecto possimus enim. Suscipit
+            harum aliquam dignissimos quia sapiente.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Wordpress</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quam corporis inventore, obcaecati illo dicta hic vero nemo
+            dignissimos expedita, voluptate architecto possimus enim. Suscipit
+            harum aliquam dignissimos quia sapiente.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn">
+        My Work
+      </a>
+    </section>
+
+    <!-- about me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Full stack Web Developer
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <img
+        src="img/dev-jane-02.jpg"
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- my work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- portfolio 1 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+          <img src="img/img-2.jpg" alt="#" />
+        </a>
+        <!-- portfolio 2 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/img-2.jpg" alt="#" />
+        </a>
+        <!-- portfolio 3 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/img-2.jpg" alt="#" />
+        </a>
+        <!-- portfolio 4 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/img-2.jpg" alt="#" />
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:oluwakayode.alao@gmail.com" class="footer__link"
+        >oluwakayode.alao@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="1" class="social-list__link"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="2" class="social-list__link"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="3" class="social-list__link"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="4" class="social-list__link"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
